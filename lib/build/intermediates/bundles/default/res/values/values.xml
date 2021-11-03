@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BasicContentBand"><attr name="gridMode">
+             <flag name="fixed" value="0"/>
+             <flag name="dynamic" value="1"/>
+        </attr><attr format="integer" name="deviceSpecificPixelSize"/></declare-styleable>
+    <declare-styleable name="EndlessLoopAdapterContainer"><attr format="boolean" name="shouldRepeat"/></declare-styleable>
+    <declare-styleable name="FeatureCoverFlow"><attr format="dimension" name="coverWidth"/><attr format="dimension" name="coverHeight"/><attr format="float" name="spacing"/><attr format="float" name="rotationThreshold"/><attr format="float" name="scalingThreshold"/><attr format="float" name="adjustPositionThreshold"/><attr format="float" name="adjustPositionMultiplier"/><attr format="float" name="maxRotationAngle"/><attr format="float" name="maxScaleFactor"/><attr format="float" name="circlePathRadius"/><attr format="float" name="circlePathRadiusInMatrixSpace"/><attr format="float" name="reflectionHeight"/><attr format="dimension" name="reflectionGap"/><attr format="integer" name="reflectionOpacity"/><attr format="dimension" name="tunningWidgetSize"/><attr format="integer" name="alignAnimationTime"/><attr format="dimension" name="verticalPaddingTop"/><attr format="dimension" name="verticalPaddingBottom"/><attr format="color" name="reflectionBackroundColor"/></declare-styleable>
+    <string name="app_name">CoverFlow</string>
+</resources>
