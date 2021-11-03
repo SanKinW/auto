@@ -19,16 +19,12 @@ import com.iot.connect.control.ModulesControl;
 
 
 public class CardActivityGroup extends ActivityGroup {
-
-    @SuppressWarnings("unused")
     private static final String TAG = ".CardActivityGroup";
     public static final String resume_action = "com.topelec.buscard.resume_action";
     public static final String recharge_action = "com.topelec.buscard.recharge_action";
 
     private FrameLayout bodyView;
     private LinearLayout resumeView, rechargeView;
-//    private Button btnConsume;
-//    private Button btnRecharge;
     private Button btnBack;
     private int flag = 0; // 通过标记跳转不同的页面，显示不同的菜单项
 
@@ -255,14 +251,12 @@ public class CardActivityGroup extends ActivityGroup {
 	 * 初始化主界面底部的功能菜单;
 	 */
     public void initMainView() {
-
         bodyView=(FrameLayout) findViewById(R.id.body);
         resumeView=(LinearLayout) findViewById(R.id.resume_radio);
         rechargeView=(LinearLayout) findViewById(R.id.recharge_radio);
         resumeView.setBackgroundResource(R.drawable.frame_button_background);
         rechargeView.setBackgroundResource(R.drawable.frame_button_nopressbg);
         initView();
-
     }
 
 

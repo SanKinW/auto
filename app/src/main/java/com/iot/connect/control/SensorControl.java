@@ -72,23 +72,7 @@ public class SensorControl {
                 // TODO Auto-generated catch block
                 e1.printStackTrace();
             }
-
-//        mReadThread = new ReadThread();
-////        mEnterQueueThread = new EnterQueueThread();
-//        mSendThread = new SendThread();
-//
-//        mReadThread.start();
-////        mEnterQueueThread.start();
-//        mSendThread.start();
-
     }
-
-//    public static SensorControl getInstance() {
-//        if (null == mInstance) {
-//            mInstance = new SensorControl();
-//        }
-//        return mInstance;
-//    }
 
 
     /**
@@ -135,29 +119,16 @@ public class SensorControl {
     public void actionControl(boolean isOpen) {
 
         if (isOpen) {
-//            try {
-//                initUart();
-//            } catch (IOException e1) {
-//                // TODO Auto-generated catch block
-//                e1.printStackTrace();
-//            }
             mReadThread = new ReadThread();
-//            mEnterQueueThread = new EnterQueueThread();
             mSendThread = new SendThread();
 
             mReadThread.start();
-//            mEnterQueueThread.start();
             mSendThread.start();
-
         }else {
-//            mEnterQueueThread.finishToSend();
-//            mSendThread.finishToSend();
 
             if (mSendThread != null)
                 mSendThread.interrupt();
-//
-//            if (mReadThread != null)
-//                mReadThread.interrupt();
+
             mReadThread.finishToSend();
         }
     }

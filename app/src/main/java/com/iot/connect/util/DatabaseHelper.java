@@ -1,4 +1,4 @@
-package com.iot.connect.database;
+package com.iot.connect.util;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

@@ -72,12 +72,6 @@ public class ModulesControl {
         }
 
     }
-//    public static ModulesControl getInstance(Handler updateHandler) {
-//        if (null == mInstance) {
-//            mInstance = new ModulesControl(updateHandler);
-//        }
-//        return mInstance;
-//    }
 
     /**
      * 线程控制

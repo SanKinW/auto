@@ -19,11 +19,17 @@
 
         <activity android:name=".cakeshop.RechargeActivity"/>
 
-        <activity android:name=".cakeshop.FullscreenActivity"/>
-
         <activity android:name=".cakeshop.ResumeActivity"/>
 
         <activity android:name=".cakeshop.Settings"/>
+
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <!-- 系统启动完成后会调用-->
+                <action android:name="android.intent.action.BOOT_COMPLETED">
+                </action>
+            </intent-filter>
+        </receiver>
     </application>
 
     <!-- 添加权限 -->

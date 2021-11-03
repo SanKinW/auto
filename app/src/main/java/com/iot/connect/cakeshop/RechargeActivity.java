@@ -18,8 +18,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.iot.connect.MainActivity;
 import com.iot.connect.R;
-import com.iot.connect.database.DatabaseHelper;
+import com.iot.connect.util.DatabaseHelper;
 
 public class RechargeActivity extends Activity {
 
@@ -329,7 +330,7 @@ public class RechargeActivity extends Activity {
     protected void onStart() {
         super.onStart();
         /**用于接收group发送过来的广播**/
-        IntentFilter filter = new IntentFilter(CardActivityGroup.recharge_action);
+        IntentFilter filter = new IntentFilter(MainActivity.recharge_action);
         registerReceiver(mBroadcastReceiver,filter);
     }
     @Override
@@ -343,26 +344,4 @@ public class RechargeActivity extends Activity {
         super.onStop();
         unregisterReceiver(mBroadcastReceiver);
     }
-
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-////        getMenuInflater().inflate(R.menu.menu_recharge, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
 }

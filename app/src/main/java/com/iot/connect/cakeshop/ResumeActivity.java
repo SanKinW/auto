@@ -13,8 +13,9 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.iot.connect.MainActivity;
 import com.iot.connect.R;
-import com.iot.connect.database.DatabaseHelper;
+import com.iot.connect.util.DatabaseHelper;
 
 public class ResumeActivity extends Activity {
 
@@ -120,7 +121,8 @@ public class ResumeActivity extends Activity {
 
         }
     }
-       /**
+
+    /**
      * 查询一条记录
      * @param key
      * @param selectionArgs
@@ -172,7 +174,7 @@ public class ResumeActivity extends Activity {
 
         /**用于接收group发送过来的广播**/
         /***用于接收group发送过来的广播***/
-        IntentFilter filter = new IntentFilter(CardActivityGroup.resume_action);
+        IntentFilter filter = new IntentFilter(MainActivity.resume_action);
         registerReceiver(broadcastReceiver,filter);
     }
 
