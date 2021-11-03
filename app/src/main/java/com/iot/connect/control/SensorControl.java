@@ -1,6 +1,5 @@
 package com.iot.connect.control;
 
-
 import android.os.Bundle;
 import android.os.Message;
 import android.util.Log;
@@ -14,9 +13,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by Amber on 2015/3/19.
- */
 public class SensorControl {
 
     private static final String TAG = "SensorControl";
@@ -30,7 +26,6 @@ public class SensorControl {
     private FileOutputStream mOutputStream;
     private ReadThread mReadThread;
     private SendThread mSendThread;
-//    private EnterQueueThread mEnterQueueThread;
 
     private LinkedList<byte[]> sendingQueue = new LinkedList<byte[]>();
 

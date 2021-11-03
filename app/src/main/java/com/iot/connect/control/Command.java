@@ -1,11 +1,6 @@
 package com.iot.connect.control;
 
-/**
- * Created by Amber on 2015/3/19.
- */
 public class Command {
-
-
     public static final int CHECK_SENSOR_DELAY = 1500;
     public static final String zigbeePort = "/dev/ttyAMA2";
     public static final String lfRfidPort = "/dev/ttyAMA2";
