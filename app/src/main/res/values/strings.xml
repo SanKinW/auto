@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">物联网控制程序</string>
+    <string name="app_name">香苑面包店</string>
 
     <string name="action_settings">Settings</string>
 
@@ -9,6 +9,7 @@
     <string name="title4">食品溯源</string>
     <string name="title5">Zigbee传感器测试</string>
     <string name="title6">RFID测试</string>
+    <string name="title7">香苑面包店</string>
 
     <drawable name="clr_normal">#00000000</drawable>
     <drawable name="clr_pressed">#9FC2C5BF</drawable>
@@ -295,4 +296,27 @@
 
     <string name="pref_title_vibrate">Vibrate</string>
 
+    <!--香苑面包店-->
+    <string name="cakeshopcard_action_settings">面包店系统设置</string>
+
+    <string name="cakeshopcard_type_settings">类型设置</string>
+
+    <string name="cakeshopcard_title_activity_recharge">一卡通充值</string>
+
+    <string name="cakeshopcard_title_activity_resume">一卡通刷卡</string>
+
+    <string name="cakeshopcard_button_resume">刷卡</string>
+
+    <string name="cakeshopcard_button_recharge">充值</string>
+
+    <string name="cakeshopcard_recharge_hint">请输入充值金额</string>
+
+    <string-array name="cakeshopcard_settings_list">
+        <item>充值</item>
+        <item>消费</item>
+    </string-array>
+    <string-array name="cakeshopcard_settings_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>

@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.topelec.smarthome.MainActivity"
+    android:background="@drawable/cakeshop_background">
+
+    <FrameLayout
+        android:id="@+id/cakeshop_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/card_machine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSettings"
+            android:src="@drawable/cakeshop_card_machine"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="100dp" />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/moneyView"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:textColor="#ffffff" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/cakeshopcard_action_settings"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/btnSetting"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/cakeshopcard_button_resume"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
